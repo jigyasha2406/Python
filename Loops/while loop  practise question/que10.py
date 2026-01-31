@@ -9,3 +9,5 @@ while(n>0):
         place*=10
     n//=10
 print(new)
+
+

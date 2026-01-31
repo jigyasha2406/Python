@@ -15,3 +15,8 @@ branch=input("Enter your branch:")
 print(f"I'm {name}.My age is {age}.")
 print("My name is {}.My age is {}.I live in {}.I'm from branch {}".format(name,age,loc,branch))
 
+for i in range(1,4+1):
+    for j in range(1,4+1):
+        print("*",end=" ")
+    print()
+
