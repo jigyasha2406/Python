@@ -14,15 +14,27 @@ else:
 
 
 
+for i in range(3):
+   for j in range(2):
+         print(i + j, end=" ")
 
 
 
+i = 10
+while i > 1:
+  i //= 2
+print(i, end=" ")
+
+total = 1
+for i in range(1, 4):
+   total *= i
+print(total)
 
 
-
-
-
-
+i = 1
+while i <= 4:
+  print(i*i, end=" ")
+i += 1
 
 
 
