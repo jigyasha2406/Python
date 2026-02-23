@@ -1,5 +1,7 @@
-
-for i in range(1, 5):
-    for j in range(i):
-        print(chr(65+j), end="")
-    print()
+n=5
+i=1
+fact=1
+while i<=n:
+    fact=fact*i
+    i+=1
+print(fact)
