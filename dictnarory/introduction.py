@@ -112,3 +112,106 @@ new={}
 for key,value in dict.items():
     new[value]=key
 print(new)
+# using membership operator
+for key in dict:
+    new[value]=key
+print(new)
+
+# find the largest value from the dictnary
+dict={
+    "a":20,
+    "b":30,
+    "c":19,
+    "d":12
+}
+lar=0
+for value in dict.values():
+    if value>lar:
+        lar=value
+print(lar)
+
+for key in dict:
+    if lar<dict[key]:
+        lar=dict[key]
+print(lar)
+
+# for negative numbers
+dict={"a":-1,"b":-2,"c":-9}
+lar=float("-inf")
+for key in dict:
+    if lar<dict[key]:
+        lar=dict[key]
+print(lar)
+
+#for the smallest number
+dict={"a":-1,"b":-2,"c":-9}
+lar=float("-inf")
+for value in dict:
+    if lar<dict[value]:
+        lar=dict[value]
+print(lar)
+
+dict={"a":-1,"b":-2,"c":-9}
+lar=float("-inf")
+for key in dict.keys():
+    if lar<key:
+        lar=key
+print(key)
+
+dict={"a":1,"b":5,"c":4}
+lar=0
+lar_key=""
+for key in dict:
+    if lar <dict[key]:
+        lar=dict[key]
+        lar_key=key
+print(lar_key)
+
+
+# count all the occurances of the element of the list
+li=[1,1,2,3,3,3,4,4,5,5]
+dict={}
+for ele in li:
+    if ele not in dict:
+        dict[ele]=1
+    else:
+        dict[ele]+=1
+print(dict)
+
+# print the duplicates in the list
+li=[1,1,2,3,3,3,4,4,5,5]
+dict={}
+for ele in li:
+    if ele not in dict:
+        dict[ele]=1
+    else:
+        dict[ele]+=1
+for key,value in dict.items():
+    if value>1:
+        print(key)
+
+str="this is the place where i born and this is famous for dal baat"
+s=str.split()
+d={}
+for word in s:
+    if word not in d:
+        d[word]=1
+    else:
+        d[word]+=1
+print(d)
+
+# create a dictnarory from two list
+k=[1,2,3,4,5]
+v=[20,30,40,50,60]
+d={}
+for i in range(len(k)):
+    d[k[i]]=v[i]
+print(d)
+
+print(v[0])
+#merge two dict
+
+# find the commom key between two dict 
+
+
+
