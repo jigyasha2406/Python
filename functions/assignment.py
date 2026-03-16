@@ -111,16 +111,7 @@ def prime(n):
     return True
 print(prime(2))   
 
-def prime(n):
-    fact=0
-    for i in range(1,n+1):
-        if n%i==0:
-            fact+=1
-    if fact==2:
-        return "prime"
-    else:
-        return "not prime"
-print(prime(8))
+li=[1,2,3,4,5,6]
 
 #Write a function that takes two numbers and returns their product.
 def prod(a,b):
