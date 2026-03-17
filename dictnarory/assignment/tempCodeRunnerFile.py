@@ -1,9 +1,9 @@
-li=[1,2,3,4,5]
-dict={"even":[],"odd":[]}
-
+li=["apple","ant","banana","ball"]
+dict={}
 for ele in li:
-    if ele%2==0:
-        dict["even"].append(ele)
+    first=ele[0]
+    if first in dict:
+        dict[first].append(ele)
     else:
-        dict["odd"].append(ele)
+        dict[first]=[ele]
 print(dict)

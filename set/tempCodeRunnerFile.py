@@ -1,4 +1,9 @@
-s1={1,2,3,4}
-s2={3,4,5,6}
-s3={3,4,7,8,9}
-print(s1 & s2 & s3)
+li=[1, 2, 3, 4, 2, 5, 6, 3, 7, 1]
+s=set()
+dup=set()
+for ele in li:
+    if ele in s:
+        dup.add(ele)
+    else:
+        s.add(ele)
+print(list(dup))

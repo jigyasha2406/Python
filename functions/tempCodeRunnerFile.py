@@ -1,16 +1,8 @@
-def func1(func):
-    call=False
-    def wrapper():
-        nonlocal call
-      
-        if not call:
-            func()
-            call=True
-        else:
-            print("function already run")
-    return wrapper
-@func1
-def show():
-    print("functio is runnung")
-show()
-show()
+def fibb(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    return fibb(n-2) + fibb(n-1)
+for i in range(1,8):
+    print(fibb(i))
