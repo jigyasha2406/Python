@@ -1,8 +1,6 @@
-def fibb(n):
-    if n==0:
-        return 0
-    if n==1:
-        return 1
-    return fibb(n-2) + fibb(n-1)
-for i in range(1,8):
-    print(fibb(i))
+def func1(fun):
+    print("this is the func 1")
+    fun()
+def hello():
+    print("hello")
+func1(hello)

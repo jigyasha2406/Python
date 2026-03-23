@@ -1,8 +1,6 @@
-k=[1,2,3,4,5]
-v=[20,30,40,50,60]
-d={}
-for i in range(len(k)):
-    d[k[i]]=v[i]
-print(d)
+d1 = {'a': 1, 'b': 2, 'c': 3}
+d2 = {'b': 4, 'c': 5, 'd': 6}
+for key in d1:
+    if key in d2:
+        print(key)
 
-print(v[1])

@@ -309,7 +309,11 @@ def add_func(func):
             return "number is not positive"
     return wrapper
 @add_func
-def power(a):
+def power(a): 
     return a**2
 print(power(2))
+ 
+
+ 
+
 

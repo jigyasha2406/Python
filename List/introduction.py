@@ -7,7 +7,7 @@ li=[]
 print(type(li))
 
 #hetrogenous element
-li=[1,False,2,None,"string"]
+li=[1,False,2,None,"string"]        
 print(li)
 
 # ordered pairs

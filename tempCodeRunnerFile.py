@@ -1,9 +1,21 @@
-n=4
-for i in range(1,n+1):
-    for j in range(n-i):
-        print(" ",end=" ")
-    for j in range(1,i+1):
-        print(chr(64+j),end=" ")
-    for j in range(n-1,0,-1):
-        print(chr(64+j),end=" ")
-    print()
+li=[1,2,3,4,5,6]
+k=2
+left=0
+right=k-1
+while left<right:
+    li[left],li[right]=li[right],li[left]
+    left+=1
+    right-=1
+left=k
+right=len(li)-1
+while left<right:
+    li[left],li[right]=li[right],li[left]
+    left+=1
+    right-=1
+left=0
+right=len(li)-1
+while left<right:
+    li[left],li[right]=li[right],li[left]
+    left+=1
+    right-=1
+print(li)

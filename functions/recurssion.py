@@ -127,7 +127,45 @@ def fibb(n):
 for i in range(8):
     print(fibb(i))
 
-#
+#count the number of digit in a number
+def count(n):
+    if n==0:
+        return 0
+    #if n==1:
+        #return 1
+    return 1 + count(n//10)
+print(count(1234))
+
+# print the sum of all the digits of a number
+def count(n):
+    if n==0:
+        return 0
+    return (n%10) + count(n//10)# + count(n+1)
+print(count(1234))
+    
+n=1234
+sum=0
+while(n>0):
+    di=n%10
+    sum+=di
+    n//=10
+print(sum)
+
+#reverse the number of digit using recursiion
+n=1234
+rev=0
+while(n>0):
+    di=n%10
+    rev=rev*10+di
+    n//=10
+print(rev)
+
+def rev(n,r=0):
+    if n==0:
+        return 0
+    return rev()
+print(rev(1234))
 
 
 
+li=[1,2,3,4]
