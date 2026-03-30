@@ -16,7 +16,7 @@ def cube(a):
     return a**3
 a=int(input("enter a number"))
 print(cube(a))
-
+  
 #Write a function that takes a number and returns whether it is even or odd.
 def even_odd(a):
     if a%2==0:
@@ -54,6 +54,8 @@ def three(a,b,c):
     elif (b>a) and (b>c):
         return b
     else:
+
+        
         return c
 a=int(input("enter a number"))
 b=int(input("enter the second number"))
