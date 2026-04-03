@@ -48,3 +48,44 @@ print(student2.college)
          
 #construtor - it is a method 
         
+#employee managememnt system
+class Employee:
+    company="TCS"
+    def __init__(self,emp_id,name,gender,salary):
+        self.emp_id=emp_id
+        self.name=name
+        self.gender=gender
+        self.salary=salary
+    def display(self):
+        print(f"Emp ID:{self.emp_id}")
+        print(f"employee name:{self.name}")
+        print(f"employee gender:{self.gender}")
+        print(f"company:{self.company}")
+
+emp1=Employee(123,"vishal","male",200)
+emp1.display()
+
+#create a class student which have some property like student name,location,id,branch,college
+#create two student object
+#and printtheir detail using the method
+#write in comment the work each line
+#change the valuesof the object after the creation
+class Student:
+    college="JECRC University"
+    def __init__(self,name,location,id,branch):
+        self.name=name
+        self.location=location
+        self.id=id
+        self.branch=branch
+    def display(self):
+        print(f"stu_id{self.id}")
+        print(f"stu_name:{self.name}")
+        print(f"stu_branch:{self.branch}")
+        print(f"stu_location:{self.location}")
+student1=Student("anjali","jaipur",123,"CSE")
+student2=Student("namrata","bhopal",124,"civil")
+#student1.display()
+print()
+student2.display()
+student1.name="jigysha"
+student1.display()

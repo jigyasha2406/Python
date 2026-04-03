@@ -1,9 +1,11 @@
-def gcd(a,b):
-    while b!=0:
-        a,b=b,a%b
-    return a
-#print(gcd(12,18))
-def lcm(a,b):
-    return (a*b)//gcd(a,b)
-
-print(lcm(12,18))
+try:
+    a="10"
+    b=20
+    c=a+b
+     
+except TypeError as e:
+    print("something is hapend",e)
+else:
+    print(c)
+finally:
+    print("this block will always run ")

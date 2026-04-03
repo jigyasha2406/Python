@@ -88,7 +88,7 @@ print_primes()
 def add(*args):
     print(sum(args))
 add(1,2)
-def details(**args):
+def details(**args):  
     for key,value in args.items():
         print(f"{key}->{value}")
 details(name="rahul",location="jaipur",batch="A26")
@@ -141,7 +141,7 @@ def func1(fun):
 def hello():
     print("hello")
 func1(hello)
- #example
+ #example 
 def high_order(simple):
     simple()
 def simple():

@@ -1,41 +1,4 @@
-#inheritance is the property of object oriented programming or one of the four pillar which makes parent class property accessible to child class.
-# single inheritence-in single level inheritance their is only one parent and one child.
 
-# multiple inheritance
-# multi level
-# hybrid
-# ex= property of the father is inherited to child
-# 
-#in heritance basically all the attribute and the methods are accesible to the child class
-class father:#this is the parent class
-    highway_property="property"
-    def father_property(self):
-        print("this is access to all the property of the father")
-#here we have inherited from the father class to the child
-class child(father):
-    pass
-child=child()
-print(child)
-#here we are accessing the father property
-print(child.highway_property)
-
-class employee:
-    company="TCS"
-    def __init__(self,name,salary,gender):
-
-        self.name=name
-        self.salary=salary
-        self.gender=gender
-class developer(employee):
-    def __init__(self,name,salary,gender,department):
-        #using the super keyword we inatialize the parent instance attribute
-        super().__init__(name,salary,gender)
-        self.department=department
-    
-obj=developer("shyam",20000,"male","software engineer")
-print(obj.salary)
-print(obj.company)
-print(obj.department)
 
 #1. Vehicle → Car
 class vehicle:
