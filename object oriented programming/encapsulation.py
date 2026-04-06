@@ -107,13 +107,14 @@ class Employee:
     def check_salary(self):
         salary=self.__salary
         print(f"the current salary is :{salary}")
-    def change_salary(self):
+    def change_salary(self,new_salary):
         self.__salary=new_salary
-        print("new salary updated!")
+        print(f"the new salary is:{new_salary}")
         
 emp1=Employee("ajay","ml engineer",25,"jaipur")
 emp1.check_salary()
 emp1.change_salary(30)
 emp1.check_salary()
+
 
 

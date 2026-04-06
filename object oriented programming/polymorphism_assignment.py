@@ -57,6 +57,16 @@ class rectangle(shape):
 circle=circle(20)
 circle.area()
 
+
+
+
+
+
+ init
+
+
+
+
     
         
 

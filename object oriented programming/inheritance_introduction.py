@@ -49,10 +49,7 @@ class child(Father):
 obj=child()
 print(obj.grandfather_prop)
 
-class person:
-    def __init__(self,name,age):
-        self.name=name
-        self.age=age
+=
         
 
 class person:

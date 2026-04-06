@@ -1,14 +1,18 @@
-class BankAccount():
-    bank_name="HDFC"
-    def __init__(self,account_holder,balance):
-        self.account_holder=account_holder
-        self.balance=balance
-    def display(self):
-        print(f"Bank name:{self.bank_name}")
-        print(f"Account Holder:{self.account_holder}")
-        print(f"Balance:{self.balance}")
-person1=BankAccount("Anjali",25)
-person2=BankAccount("Namrata",30)
-person1.display()
-print()
-person2.display()
+class sound():
+    def make_sound(self):
+        print("diffrent animal make different sound")
+class dog(sound):
+    def make_sound(self):
+        print("Barks")
+class cat(sound):
+    def make_sound(self):
+        print("meow")
+class cow(sound):
+    def make_sound(self):
+        print("woo")
+dog=dog()
+cat=cat()
+cow=cow()
+cow.make_sound()
+cat.make_sound()
+dog.make_sound()
