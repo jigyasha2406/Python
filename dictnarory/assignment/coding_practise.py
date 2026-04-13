@@ -57,3 +57,16 @@ if len(set(d1.values()))==len(list(d1.values())):
     print("unique")
 else:
     print("not unique")
+
+li=["apple","ant","banana","ball"]
+dict={}
+for ele in li:
+    first=ele[0]
+    if first in dict:
+        dict[first].append(ele)
+    else:
+        dict[first]=[ele]
+print(dict)
+    
+    
+    

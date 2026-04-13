@@ -98,3 +98,46 @@ for i in range(len(t)):
         if t[i]>lar:
             lar=t[i]
 print(lar)
+
+
+#second largest
+li=[1,2,3,4,5,6,7]
+first=float("-inf")
+second=float("-inf")
+for ele in li:
+    if ele>first:
+        second=first
+        first=ele
+    elif ele>second:
+        second=ele
+print(second)
+
+#sorting without sort
+li=[2,3,1,5,8,3,1,2]
+for i in range(len(li)):
+    min_index=i
+    for j in range(i+1,len(li)):
+        if li[j]<li[min_index]:
+            min_index=j
+    li[i],li[min_index]=li[min_index],li[i]
+print(li)
+
+
+s="abcabcbb"
+max_len=0
+for i in range(len(s)):
+    substring=[]
+    current_sum=0
+    start,stop,temp_start=0
+    for j in range(i,len(s)):
+        if s[j] in substring:
+            break
+        substring.append(s[j])
+        current_sum+=1
+        
+    if current_sum>max_len:
+        max_len=current_sum
+print(max_len)
+
+
+               

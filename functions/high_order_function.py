@@ -65,3 +65,7 @@ f1=choose_function("double")
 f2=choose_function("triple")
 print(f1(5))
 print(f2(10))
+
+
+        
+    

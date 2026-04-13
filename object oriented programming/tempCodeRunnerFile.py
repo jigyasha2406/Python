@@ -1,18 +1,16 @@
-class sound():
-    def make_sound(self):
-        print("diffrent animal make different sound")
-class dog(sound):
-    def make_sound(self):
-        print("Barks")
-class cat(sound):
-    def make_sound(self):
-        print("meow")
-class cow(sound):
-    def make_sound(self):
-        print("woo")
-dog=dog()
-cat=cat()
-cow=cow()
-cow.make_sound()
-cat.make_sound()
-dog.make_sound()
+class Appliance:
+    def turn_on(self):
+        print("Appliance is turned on")
+class Fan(Appliance):
+    def turn_on(self):
+        print("Fan is spinning")
+class AC(Appliance):
+    def turn_on(self):
+        print("AC is cooling")
+class WashingMachine(Appliance):
+    def turn_on(self):
+        print("Washing Machine is washing clothes")
+a1 = Fan()
+a2 = AC()
+a3 = WashingMachine()
+a1.turn_on()
