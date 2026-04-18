@@ -1,0 +1,6 @@
+file=open("write.txt","r+")
+file.write("this is the new content\n")
+file.seek(0)
+content=file.read()
+print(content)
+file.close()
